@@ -2,20 +2,18 @@ name: mc_launcher
 version: 0.0.1
 
 author: MinimineLP <miniminelp.de@gmail.com>
-homepage: https://github.com/MinimineLP/dart-mc-launcher
+homepage: https://miniminelp.github.io/dart-mc-launcher/
 repository: https://github.com/MinimineLP/dart-mc-launcher
 issue_tracker: https://github.com/MinimineLP/dart-mc-launcher/issues
-documentation: https://github.com/MinimineLP/dart-mc-launcher
+documentation: https://miniminelp.github.io/dart-mc-launcher/doc/api/index.html
 description: an easy option to create and start minecraft servers in dart
 environment:
     sdk: ">=2.3.0 <3.0.0"
 dependencies:
-  colorize: ^2.0.0
   gson: ^0.1.2
   html: ^0.14.0+2
   http: ^0.12.0+2
   process_run: ^0.10.2
-  yaml: ^2.1.16
   path: ^1.6.4
   console: ^3.1.0
   archive: ^2.0.10
