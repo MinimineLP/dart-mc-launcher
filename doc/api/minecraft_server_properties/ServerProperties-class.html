@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the ServerProperties class from the server_properties library, for the Dart programming language.">
+  <title>ServerProperties class - server_properties library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">mc_launcher</a></li>
+    <li><a href="minecraft_server_properties/minecraft_server_properties-library.html">server_properties</a></li>
+    <li class="self-crumb">ServerProperties class</li>
+  </ol>
+  <div class="self-name">ServerProperties</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">mc_launcher</a></li>
+      <li><a href="minecraft_server_properties/minecraft_server_properties-library.html">server_properties</a></li>
+      <li class="self-crumb">ServerProperties class</li>
+    </ol>
+    
+    <h5>server_properties library</h5>
+    <ol>
+      <li class="section-title"><a href="minecraft_server_properties/minecraft_server_properties-library.html#classes">Classes</a></li>
+      <li><a href="minecraft_server_properties/LEVEL_TYPE-class.html">LEVEL_TYPE</a></li>
+      <li><a href="minecraft_server_properties/SERVER_DIFFICULTY-class.html">SERVER_DIFFICULTY</a></li>
+      <li><a href="minecraft_server_properties/SERVER_GAMEMODE-class.html">SERVER_GAMEMODE</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties-class.html">ServerProperties</a></li>
+    
+    
+    
+    
+    
+    
+    
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-class">ServerProperties</span> class </h1></div>
+
+    
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="ServerProperties" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/ServerProperties.html">ServerProperties</a></span><span class="signature">({<span class="parameter" id="-param-allow_flight"><span class="type-annotation">bool</span> <span class="parameter-name">allow_flight</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-allow_nether"><span class="type-annotation">bool</span> <span class="parameter-name">allow_nether</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-broadcast_console_to_ops"><span class="type-annotation">bool</span> <span class="parameter-name">broadcast_console_to_ops</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-difficulty"><span class="type-annotation"><a href="minecraft_server_properties/SERVER_DIFFICULTY-class.html">SERVER_DIFFICULTY</a></span> <span class="parameter-name">difficulty</span>: <span class="default-value">SERVER_DIFFICULTY.EASY</span>, </span> <span class="parameter" id="-param-enable_command_block"><span class="type-annotation">bool</span> <span class="parameter-name">enable_command_block</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-enable_query"><span class="type-annotation">bool</span> <span class="parameter-name">enable_query</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-enable_rcon"><span class="type-annotation">bool</span> <span class="parameter-name">enable_rcon</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-enforce_whitelist"><span class="type-annotation">bool</span> <span class="parameter-name">enforce_whitelist</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-force_gamemode"><span class="type-annotation">bool</span> <span class="parameter-name">force_gamemode</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-function_permission_level"><span class="type-annotation">int</span> <span class="parameter-name">function_permission_level</span>: <span class="default-value">2</span>, </span> <span class="parameter" id="-param-gamemode"><span class="type-annotation"><a href="minecraft_server_properties/SERVER_GAMEMODE-class.html">SERVER_GAMEMODE</a></span> <span class="parameter-name">gamemode</span>: <span class="default-value">SERVER_GAMEMODE.SURVIVAL</span>, </span> <span class="parameter" id="-param-generate_structures"><span class="type-annotation">bool</span> <span class="parameter-name">generate_structures</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-generator_settings"><span class="type-annotation">String</span> <span class="parameter-name">generator_settings</span>: <span class="default-value">""</span>, </span> <span class="parameter" id="-param-hardcore"><span class="type-annotation">bool</span> <span class="parameter-name">hardcore</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-level_name"><span class="type-annotation">String</span> <span class="parameter-name">level_name</span>: <span class="default-value">"world"</span>, </span> <span class="parameter" id="-param-level_seed"><span class="type-annotation">String</span> <span class="parameter-name">level_seed</span>: <span class="default-value">""</span>, </span> <span class="parameter" id="-param-level_type"><span class="type-annotation"><a href="minecraft_server_properties/LEVEL_TYPE-class.html">LEVEL_TYPE</a></span> <span class="parameter-name">level_type</span>: <span class="default-value">LEVEL_TYPE.DEFAULT</span>, </span> <span class="parameter" id="-param-max_build_height"><span class="type-annotation">int</span> <span class="parameter-name">max_build_height</span>: <span class="default-value">256</span>, </span> <span class="parameter" id="-param-max_players"><span class="type-annotation">int</span> <span class="parameter-name">max_players</span>: <span class="default-value">20</span>, </span> <span class="parameter" id="-param-max_tick_time"><span class="type-annotation">int</span> <span class="parameter-name">max_tick_time</span>: <span class="default-value">60000</span>, </span> <span class="parameter" id="-param-max_world_size"><span class="type-annotation">int</span> <span class="parameter-name">max_world_size</span>: <span class="default-value">29999984</span>, </span> <span class="parameter" id="-param-motd"><span class="type-annotation">String</span> <span class="parameter-name">motd</span>: <span class="default-value">"A Minecraft Server"</span>, </span> <span class="parameter" id="-param-network_compression_threshold"><span class="type-annotation">int</span> <span class="parameter-name">network_compression_threshold</span>: <span class="default-value">256</span>, </span> <span class="parameter" id="-param-online_mode"><span class="type-annotation">bool</span> <span class="parameter-name">online_mode</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-op_permission_level"><span class="type-annotation">int</span> <span class="parameter-name">op_permission_level</span>: <span class="default-value">4</span>, </span> <span class="parameter" id="-param-player_idle_timeout"><span class="type-annotation">int</span> <span class="parameter-name">player_idle_timeout</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-prevent_proxy_connections"><span class="type-annotation">bool</span> <span class="parameter-name">prevent_proxy_connections</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-pvp"><span class="type-annotation">bool</span> <span class="parameter-name">pvp</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-resource_pack"><span class="type-annotation">String</span> <span class="parameter-name">resource_pack</span>: <span class="default-value">""</span>, </span> <span class="parameter" id="-param-resource_pack_sha1"><span class="type-annotation">String</span> <span class="parameter-name">resource_pack_sha1</span>: <span class="default-value">""</span>, </span> <span class="parameter" id="-param-server_ip"><span class="type-annotation">String</span> <span class="parameter-name">server_ip</span>: <span class="default-value">""</span>, </span> <span class="parameter" id="-param-server_port"><span class="type-annotation">int</span> <span class="parameter-name">server_port</span>: <span class="default-value">25565</span>, </span> <span class="parameter" id="-param-snooper_enabled"><span class="type-annotation">bool</span> <span class="parameter-name">snooper_enabled</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-spawn_animals"><span class="type-annotation">bool</span> <span class="parameter-name">spawn_animals</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-spawn_monsters"><span class="type-annotation">bool</span> <span class="parameter-name">spawn_monsters</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-spawn_npcs"><span class="type-annotation">bool</span> <span class="parameter-name">spawn_npcs</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-spawn_protection"><span class="type-annotation">int</span> <span class="parameter-name">spawn_protection</span>: <span class="default-value">16</span>, </span> <span class="parameter" id="-param-view_distance"><span class="type-annotation">int</span> <span class="parameter-name">view_distance</span>: <span class="default-value">10</span>, </span> <span class="parameter" id="-param-white_list"><span class="type-annotation">bool</span> <span class="parameter-name">white_list</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-template"><span class="type-annotation"><a href="properties_format/PropertiesTemplate-class.html">PropertiesTemplate</a></span> <span class="parameter-name">template</span>: <span class="default-value">null</span>, </span> <span class="parameter" id="-param-file"><span>@required</span> <span class="type-annotation">String</span> <span class="parameter-name">file</span></span> })</span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="ServerProperties.loadFile" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/ServerProperties.loadFile.html">ServerProperties.loadFile</a></span><span class="signature">(<span class="parameter" id="loadFile-param-file"><span class="type-annotation">String</span> <span class="parameter-name">file</span></span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="ServerProperties.loadMap" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/ServerProperties.loadMap.html">ServerProperties.loadMap</a></span><span class="signature">(<span class="parameter" id="loadMap-param-properties"><span class="type-annotation">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">properties</span>, </span> <span class="parameter" id="loadMap-param-file"><span class="type-annotation">String</span> <span class="parameter-name">file</span></span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="ServerProperties.loadProperties" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/ServerProperties.loadProperties.html">ServerProperties.loadProperties</a></span><span class="signature">(<span class="parameter" id="loadProperties-param-properties"><span class="type-annotation"><a href="properties_format/Properties-class.html">Properties</a></span> <span class="parameter-name">properties</span>, </span> <span class="parameter" id="loadProperties-param-file"><span class="type-annotation">String</span> <span class="parameter-name">file</span></span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="allow_flight" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/allow_flight.html">allow_flight</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="allow_nether" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/allow_nether.html">allow_nether</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="broadcast_console_to_ops" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/broadcast_console_to_ops.html">broadcast_console_to_ops</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="difficulty" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/difficulty.html">difficulty</a></span>
+          <span class="signature">&#8596; <a href="minecraft_server_properties/SERVER_DIFFICULTY-class.html">SERVER_DIFFICULTY</a></span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="enable_command_block" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/enable_command_block.html">enable_command_block</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="enable_query" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/enable_query.html">enable_query</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="enable_rcon" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/enable_rcon.html">enable_rcon</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="enforce_whitelist" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/enforce_whitelist.html">enforce_whitelist</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="file" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/file.html">file</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="force_gamemode" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/force_gamemode.html">force_gamemode</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="function_permission_level" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/function_permission_level.html">function_permission_level</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="gamemode" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/gamemode.html">gamemode</a></span>
+          <span class="signature">&#8596; <a href="minecraft_server_properties/SERVER_GAMEMODE-class.html">SERVER_GAMEMODE</a></span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="generate_structures" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/generate_structures.html">generate_structures</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="generator_settings" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/generator_settings.html">generator_settings</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="hardcore" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/hardcore.html">hardcore</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="level_name" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/level_name.html">level_name</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="level_seed" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/level_seed.html">level_seed</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="level_type" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/level_type.html">level_type</a></span>
+          <span class="signature">&#8596; <a href="minecraft_server_properties/LEVEL_TYPE-class.html">LEVEL_TYPE</a></span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="max_build_height" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/max_build_height.html">max_build_height</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="max_players" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/max_players.html">max_players</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="max_tick_time" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/max_tick_time.html">max_tick_time</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="max_world_size" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/max_world_size.html">max_world_size</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="motd" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/motd.html">motd</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="network_compression_threshold" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/network_compression_threshold.html">network_compression_threshold</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="online_mode" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/online_mode.html">online_mode</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="op_permission_level" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/op_permission_level.html">op_permission_level</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="player_idle_timeout" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/player_idle_timeout.html">player_idle_timeout</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="prevent_proxy_connections" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/prevent_proxy_connections.html">prevent_proxy_connections</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="pvp" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/pvp.html">pvp</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="resource_pack" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/resource_pack.html">resource_pack</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="resource_pack_sha1" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/resource_pack_sha1.html">resource_pack_sha1</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="server_ip" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/server_ip.html">server_ip</a></span>
+          <span class="signature">&#8596; String</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="server_port" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/server_port.html">server_port</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="snooper_enabled" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/snooper_enabled.html">snooper_enabled</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="spawn_animals" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/spawn_animals.html">spawn_animals</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="spawn_monsters" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/spawn_monsters.html">spawn_monsters</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="spawn_npcs" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/spawn_npcs.html">spawn_npcs</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="spawn_protection" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/spawn_protection.html">spawn_protection</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="template" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/template.html">template</a></span>
+          <span class="signature">&#8596; <a href="properties_format/PropertiesTemplate-class.html">PropertiesTemplate</a></span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="view_distance" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/view_distance.html">view_distance</a></span>
+          <span class="signature">&#8596; int</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="white_list" class="property">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/white_list.html">white_list</a></span>
+          <span class="signature">&#8596; bool</span>         
+        </dt>
+        <dd>
+          
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>         
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="minecraft_server_properties/ServerProperties/hashCode.html">[...]</a>
+                  <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>         
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+                  <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="save" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/save.html">save</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">File</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="saveSync" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/saveSync.html">saveSync</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="saveToFile" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/saveToFile.html">saveToFile</a></span><span class="signature">(<wbr><span class="parameter" id="saveToFile-param-file"><span class="type-annotation">String</span> <span class="parameter-name">file</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">File</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="saveToFileSync" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/saveToFileSync.html">saveToFileSync</a></span><span class="signature">(<wbr><span class="parameter" id="saveToFileSync-param-file"><span class="type-annotation">String</span> <span class="parameter-name">file</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="toMap" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/toMap.html">toMap</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="toProperties" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/toProperties.html">toProperties</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="properties_format/Properties-class.html">Properties</a></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="toString" class="callable">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+                  </dt>
+        <dd>
+          Returns a string representation of this object.
+                  <div class="features">override</div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="minecraft_server_properties/ServerProperties/noSuchMethod.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="minecraft_server_properties/ServerProperties/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          The equality operator. <a href="minecraft_server_properties/ServerProperties/operator_equals.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="minecraft_server_properties/ServerProperties-class.html#constructors">Constructors</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/ServerProperties.html">ServerProperties</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/ServerProperties.loadFile.html">loadFile</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/ServerProperties.loadMap.html">loadMap</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/ServerProperties.loadProperties.html">loadProperties</a></li>
+    
+      <li class="section-title">
+        <a href="minecraft_server_properties/ServerProperties-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="minecraft_server_properties/ServerProperties/allow_flight.html">allow_flight</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/allow_nether.html">allow_nether</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/broadcast_console_to_ops.html">broadcast_console_to_ops</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/difficulty.html">difficulty</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/enable_command_block.html">enable_command_block</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/enable_query.html">enable_query</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/enable_rcon.html">enable_rcon</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/enforce_whitelist.html">enforce_whitelist</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/file.html">file</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/force_gamemode.html">force_gamemode</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/function_permission_level.html">function_permission_level</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/gamemode.html">gamemode</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/generate_structures.html">generate_structures</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/generator_settings.html">generator_settings</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/hardcore.html">hardcore</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/level_name.html">level_name</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/level_seed.html">level_seed</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/level_type.html">level_type</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/max_build_height.html">max_build_height</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/max_players.html">max_players</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/max_tick_time.html">max_tick_time</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/max_world_size.html">max_world_size</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/motd.html">motd</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/network_compression_threshold.html">network_compression_threshold</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/online_mode.html">online_mode</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/op_permission_level.html">op_permission_level</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/player_idle_timeout.html">player_idle_timeout</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/prevent_proxy_connections.html">prevent_proxy_connections</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/pvp.html">pvp</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/resource_pack.html">resource_pack</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/resource_pack_sha1.html">resource_pack_sha1</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/server_ip.html">server_ip</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/server_port.html">server_port</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/snooper_enabled.html">snooper_enabled</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/spawn_animals.html">spawn_animals</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/spawn_monsters.html">spawn_monsters</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/spawn_npcs.html">spawn_npcs</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/spawn_protection.html">spawn_protection</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/template.html">template</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/view_distance.html">view_distance</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/white_list.html">white_list</a></li>
+      <li class="inherited"><a href="minecraft_server_properties/ServerProperties/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="minecraft_server_properties/ServerProperties/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="minecraft_server_properties/ServerProperties-class.html#instance-methods">Methods</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/save.html">save</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/saveSync.html">saveSync</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/saveToFile.html">saveToFile</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/saveToFileSync.html">saveToFileSync</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/toMap.html">toMap</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/toProperties.html">toProperties</a></li>
+      <li><a href="minecraft_server_properties/ServerProperties/toString.html">toString</a></li>
+      <li class="inherited"><a href="minecraft_server_properties/ServerProperties/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="minecraft_server_properties/ServerProperties-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="minecraft_server_properties/ServerProperties/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    mc_launcher 0.0.1
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 0.28.2">
+  <meta name="description" content="mc_launcher API docs, for the Dart programming language.">
+  <title>mc_launcher - Dart API docs</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/MinimineLP/dart-mc-launcher">mc_launcher package</a></li>
+  </ol>
+  <div class="self-name">mc_launcher</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="https://github.com/MinimineLP/dart-mc-launcher">mc_launcher package</a></li>
+    </ol>
+    
+    <h5 class="hidden-xs"><span class="package-name">mc_launcher</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="minecraft_authorization/minecraft_authorization-library.html">authorization</a></li>
+          <li><a href="fabric_client/fabric_client-library.html">client</a></li>
+          <li><a href="minecraft_client/minecraft_client-library.html">client</a></li>
+          <li><a href="vanilla_client/vanilla_client-library.html">client</a></li>
+          <li><a href="console/console-library.html">console</a></li>
+          <li><a href="core/core-library.html">core</a></li>
+          <li><a href="fabric_fabric/fabric_fabric-library.html">fabric</a></li>
+          <li><a href="fabric_fabricutils/fabric_fabricutils-library.html">fabricutils</a></li>
+          <li><a href="minecraft_file_creator/minecraft_file_creator-library.html">file_creator</a></li>
+          <li><a href="java/java-library.html">java</a></li>
+          <li><a href="minecraft_minecraft/minecraft_minecraft-library.html">minecraft</a></li>
+          <li><a href="properties_format/properties_format-library.html">properties_format</a></li>
+          <li><a href="fabric_server/fabric_server-library.html">server</a></li>
+          <li><a href="minecraft_server/minecraft_server-library.html">server</a></li>
+          <li><a href="vanilla_server/vanilla_server-library.html">server</a></li>
+          <li><a href="minecraft_server_properties/minecraft_server_properties-library.html">server_properties</a></li>
+          <li><a href="utils/utils-library.html">utils</a></li>
+          <li><a href="vanilla_vanilla/vanilla_vanilla-library.html">vanilla</a></li>
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <section class="desc markdown">
+        <h1 id="dart-mc-launcher-v001">dart-mc-launcher v0.0.1</h1>
+<p>dart-mc-launcher is a framework for starting minecraft clients and servers from dart</p>
+<h2 id="installation">Installation</h2>
+<pre class="language-yaml"><code class="language-yaml">name: [unique_namespace]
+dependencies:  
+  mc_launcher: ^0.0.1
+</code></pre>
+<p>Also remember to replace the <code>[unique_namespace]</code> with your own project name and run</p>
+<pre class="language-shell"><code class="language-shell">$ pub get
+</code></pre>
+<p>if you are using a clever editor like <code>vscode</code>, you can propably you can propably skip this step</p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="base"><strong>Base</strong></h3>
+<p>First import the package</p>
+<pre class="language-dart"><code class="language-dart">import 'package:mc_launcher/core.dart';
+</code></pre>
+<p>The hole package is written asynchronously, so we will use an async main method to demonstarte the package functionality.</p>
+<pre class="language-dart"><code class="language-dart">void main(List&lt;String&gt; args) async {
+}
+</code></pre>
+<h3 id="server"><strong>Server</strong></h3>
+<p>Inside of it we will create a simple vanilla server the subdirectory server. This directory will be created automatically. Also we will set the default eula value to true, so we can start the server. It is defaultly false, so we have to accept it manually, but with this, our server is directly ready to start.
+I set the version to 1.14.4 here, if you do not set the version, it will automatically use the latest version</p>
+<pre class="language-dart"><code class="language-dart">MinecraftServer server = await VanillaServer.create("./server", defaultEula: true, version: "1.14.4");
+</code></pre>
+<p>Now we start the server</p>
+<pre class="language-dart"><code class="language-dart">server.start();
+</code></pre>
+<p>We can execute Commands using</p>
+<pre class="language-dart"><code class="language-dart">server.executeCommand("say hello world :)");
+</code></pre>
+<p>And stop it using</p>
+<pre class="language-dart"><code class="language-dart">server.stop();
+</code></pre>
+<p>more configurations you can set like this:</p>
+<pre class="language-dart"><code class="language-dart">server.properties.mar
+</code></pre>
+<h3 id="client"><strong>Client</strong></h3>
+<p>To create clients also is really easy. You just have to specify the version, the root directory. If you want you can also specify maximum <em>(default: 1024)</em> and minimum <em>(default 512)</em> ram. <em>It will take some time for the client to download the assets at this point on the first start</em></p>
+<pre class="language-dart"><code class="language-dart">MinecraftClient client = await VanillaClient.createClient(rootDir: "./client", version: "1.14.4", maxRam: 6000, minRam: 4000);
+</code></pre>
+<p>To start the clients just use client.start.</p>
+<pre class="language-dart"><code class="language-dart">client.start()
+</code></pre>
+<p>you can <strong>not</strong> use .stop() on the clients, you can just kill them via client.kill. The problem with killing the client is, that it saves no worlds, etc when you kill them, so be carefull with this function</p>
+<pre class="language-dart"><code class="language-dart">client.kill()
+</code></pre>
+<h2 id="license">License</h2>
+<p>This package is licensed under the <a href="https://github.com/MinimineLP/dart-mc-launcher/blob/master/LICENSE">BSD2-Clause</a></p>
+<h2 id="authors">Authors</h2><ul><li><strong>Minimine</strong> - <em>Initial work</em> - <a href="https://github.com/MinimineLP">Minimine</a></li></ul>
+<h2 id="issues">Issues</h2>
+<p>Please report bugs, issues, feature request and stuff like that on the <a href="https://github.com/MinimineLP/dart-mc-launcher/issues">github issue tracker</a></p>
+<p>If you are coding yourself and have a fix for my code feel free do send a <a href="https://github.com/MinimineLP/dart-mc-launcher/pulls">pull request</a></p>
+      </section>
+      
+        <section class="summary">
+            <h2>Libraries</h2>
+          <dl>
+            <dt id="authorization">
+              <span class="name"><a href="minecraft_authorization/minecraft_authorization-library.html">authorization</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="client">
+              <span class="name"><a href="fabric_client/fabric_client-library.html">client</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="client">
+              <span class="name"><a href="minecraft_client/minecraft_client-library.html">client</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="client">
+              <span class="name"><a href="vanilla_client/vanilla_client-library.html">client</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="console">
+              <span class="name"><a href="console/console-library.html">console</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="core">
+              <span class="name"><a href="core/core-library.html">core</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="fabric">
+              <span class="name"><a href="fabric_fabric/fabric_fabric-library.html">fabric</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="fabricutils">
+              <span class="name"><a href="fabric_fabricutils/fabric_fabricutils-library.html">fabricutils</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="file_creator">
+              <span class="name"><a href="minecraft_file_creator/minecraft_file_creator-library.html">file_creator</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="java">
+              <span class="name"><a href="java/java-library.html">java</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="minecraft">
+              <span class="name"><a href="minecraft_minecraft/minecraft_minecraft-library.html">minecraft</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="properties_format">
+              <span class="name"><a href="properties_format/properties_format-library.html">properties_format</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="server">
+              <span class="name"><a href="fabric_server/fabric_server-library.html">server</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="server">
+              <span class="name"><a href="minecraft_server/minecraft_server-library.html">server</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="server">
+              <span class="name"><a href="vanilla_server/vanilla_server-library.html">server</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="server_properties">
+              <span class="name"><a href="minecraft_server_properties/minecraft_server_properties-library.html">server_properties</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="utils">
+              <span class="name"><a href="utils/utils-library.html">utils</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>            <dt id="vanilla">
+              <span class="name"><a href="vanilla_vanilla/vanilla_vanilla-library.html">vanilla</a></span>             
+            </dt>
+            <dd>
+              
+            </dd>          </dl>
+        </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    mc_launcher 0.0.1
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the getAssets method from the MinecraftClientPreparer class, for the Dart programming language.">
+  <title>getAssets method - MinecraftClientPreparer class - client library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">mc_launcher</a></li>
+    <li><a href="minecraft_client/minecraft_client-library.html">client</a></li>
+    <li><a href="minecraft_client/MinecraftClientPreparer-class.html">MinecraftClientPreparer</a></li>
+    <li class="self-crumb">getAssets method</li>
+  </ol>
+  <div class="self-name">getAssets</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">mc_launcher</a></li>
+      <li><a href="minecraft_client/minecraft_client-library.html">client</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer-class.html">MinecraftClientPreparer</a></li>
+      <li class="self-crumb">getAssets method</li>
+    </ol>
+    
+    <h5>MinecraftClientPreparer class</h5>
+    <ol>
+      <li class="section-title"><a href="minecraft_client/MinecraftClientPreparer-class.html#constructors">Constructors</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/MinecraftClientPreparer.html">MinecraftClientPreparer</a></li>
+    
+      <li class="section-title">
+        <a href="minecraft_client/MinecraftClientPreparer-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/parent.html">parent</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/root.html">root</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/version.html">version</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/version_manifest.html">version_manifest</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/version_name.html">version_name</a></li>
+      <li class="inherited"><a href="minecraft_client/MinecraftClientPreparer/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="minecraft_client/MinecraftClientPreparer/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="minecraft_client/MinecraftClientPreparer-class.html#instance-methods">Methods</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getAssets.html">getAssets</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getClasses.html">getClasses</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getJar.html">getJar</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getJVM.html">getJVM</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getLaunchOptions.html">getLaunchOptions</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getNatives.html">getNatives</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/getOS.html">getOS</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/install.html">install</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/parseRule.html">parseRule</a></li>
+      <li><a href="minecraft_client/MinecraftClientPreparer/setup.html">setup</a></li>
+      <li class="inherited"><a href="minecraft_client/MinecraftClientPreparer/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="minecraft_client/MinecraftClientPreparer/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="minecraft_client/MinecraftClientPreparer-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="minecraft_client/MinecraftClientPreparer/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">getAssets</span> method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">Future</span>
+            <span class="name ">getAssets</span>
+(<wbr>)
+      
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">Future getAssets() async {
+
+  String dir = path.join(root, &#39;assets&#39;, &#39;indexes&#39;).replaceAll(&quot;\\&quot;, &quot;&#47;&quot;);
+  await createDirIfNotExists(dir);
+  String assetIndex = path.join(dir, &quot;${this.version[&quot;assetIndex&quot;][&quot;id&quot;]}.json&quot;);
+
+  if(!File(assetIndex).existsSync()) {
+    await downloadFile(this.version[&quot;assetIndex&quot;][&quot;url&quot;], path.join(root, &#39;assets&#39;, &#39;indexes&#39;, &quot;${this.version[&quot;assetIndex&quot;][&quot;id&quot;]}.json&quot;));
+  }
+
+  Map&lt;String,dynamic&gt; index = json.decode(File(assetIndex).readAsStringSync());
+
+  List&lt;void Function()&gt; funcs = [];
+  List&lt;Map&lt;String,String&gt;&gt; infos = [];
+
+  index[&quot;objects&quot;].forEach((key, value) {
+    String hash = value[&quot;hash&quot;];
+    String subhash = hash.substring(0,2);
+    String assetDirectory = path.join(root, &#39;assets&#39;);
+    String subAsset = path.join(assetDirectory, &#39;objects&#39;, subhash);
+    if(!File(path.join(subAsset, hash)).existsSync()) {
+      funcs.add(() async {
+        await createDirIfNotExists(subAsset);
+        await downloadFile(&#39;https:&#47;&#47;resources.download.minecraft.net&#47;${subhash}&#47;${hash}&#39;, path.join(subAsset,hash));
+      });
+      infos.add({&quot;file&quot;: key, &quot;hash&quot;: hash, &quot;subhash&quot;: subhash});
+    };
+  });
+  if(funcs.length &gt; 0) {
+    AdvancedProgressBar progress = AdvancedProgressBar(max: funcs.length, value: 0);
+    progress.update(value: 0);
+
+    for(int i=0;i&lt;funcs.length;i++) {
+      progress.update(actual: &quot;| downloading asset asset: ${infos[i][&quot;subhash&quot;]}&#47;${infos[i][&quot;hash&quot;]}: (${infos[i][&quot;file&quot;]})...&quot;);
+      await funcs[i]();
+      progress.update(value: i + 1);
+    }
+
+    progress.kill();
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    mc_launcher 0.0.1
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
