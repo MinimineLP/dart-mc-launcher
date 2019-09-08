@@ -19,5 +19,5 @@ dependencies:
   archive: ^2.0.10
   merge_map: ^1.0.2
   uuid: ^2.0.2
+  meta: ^1.1.7
 executables:
-  objd:
