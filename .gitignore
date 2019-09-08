@@ -1,0 +1,8 @@
+/.vscode
+generatedoc.dart
+/webdoc
+/testing
+.packages
+pubspec.lock
+/.dart_tool
+/.vs
